@@ -1,0 +1,14 @@
+
+ng add @angular/material
+npm install material-design-icons
+
+when not able to run the 'ng serve' i run followed commnads
+. set-ExecutionPolicy RemoteSigned -Scope CurrentUser   
+. Get-ExecutionPolicy -list 
+. Get-ExecutionPolicy 
+
+
+Refered Sites
+-------------
+https://stackoverflow.com/questions/49796212/angular-material-icons-not-working
+

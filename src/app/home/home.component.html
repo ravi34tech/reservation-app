@@ -1,0 +1,36 @@
+
+
+<div class="home-page-body"> 
+    <h2>
+        Welcome to OAYO room reservation systems
+    </h2> 
+
+    <div style="width: 100%; display:flex; flex-direction: row; overflow: auto;">   
+        <mat-card class="example-card" >
+            <mat-card-title primary>Rooms Availability</mat-card-title>
+            <mat-card-subtitle>OAYO having total rooms: {{totalRooms}} to serve you better.</mat-card-subtitle>
+            <mat-card-content>
+                <p>Booked Rooms    : {{bookedRooms}} </p>
+                <p>Available Rooms : {{availableRooms}} </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button (click)="checkRoomAvailability()">Check Availability</button>
+            </mat-card-actions>
+            <mat-card-footer>
+                <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+            </mat-card-footer>
+        </mat-card> 
+        <mat-card class="example-card">
+            <mat-card-title>OAYO Rooms</mat-card-title>
+            <mat-card-subtitle>Hospitality of company </mat-card-subtitle>
+            <mat-card-content>
+                <p>Reserve or Book a room in OAYO </p>
+            </mat-card-content>
+            <mat-divider inset></mat-divider>
+            <mat-card-actions align="end" >
+                <button mat-button [routerLink]="['/book']">BOOK ROOM</button> &nbsp;
+                <button mat-button [routerLink]="['/reserve']">RESERVE ROOM</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

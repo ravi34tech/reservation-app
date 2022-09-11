@@ -1,0 +1,22 @@
+
+.home-page-body {
+    height: 91%;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(28, 184, 132)
+}
+
+.example-card {
+    max-width: 400px;
+}
+
+mat-card {
+    width: 50%;
+    max-height: 50%;
+    min-height: 50%;
+    margin: 10px;
+}
+
+.card-action-button {
+    padding-top: 50px !important;
+}

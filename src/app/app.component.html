@@ -1,10 +1,19 @@
 
-<div class="home-page-body"> 
-      Welcome to Reservation-App 
-      <br />
-      <span>
-            <a href="/book">Book a Room </a> &nbsp; &nbsp;
-            <a href="/reserve">Reserve Room</a>
-      </span>
-      
-</div>
+      <mat-toolbar color="primary">
+        <button [matMenuTriggerFor]="menu">
+          <mat-icon>menu</mat-icon>          
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="routeToBookPage()" >Book a Room</button>
+            <button mat-menu-item (click)="routeToReservePage()">Reserve a Room</button>
+        </mat-menu>
+        <a><span [routerLink]="['/home']"> &nbsp;&nbsp;  OAYO  </span> </a>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+          <mat-icon>share</mat-icon>
+        </button>
+      </mat-toolbar>
+<router-outlet></router-outlet>
